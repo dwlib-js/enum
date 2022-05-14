@@ -1,0 +1,50 @@
+{
+  "name": "@dwlib/enum",
+  "version": "2.0.0",
+  "description": "Enum API",
+  "main": "lib/index.js",
+  "imports": {
+    "#intrinsic": "@dwlib/intrinsic",
+    "#intrinsic/*": "@dwlib/intrinsic/*",
+    "#type": "@dwlib/type",
+    "#type/*": "@dwlib/type/*",
+    "#internal-slot": "@dwlib/internal-slot",
+    "#internal-slot/*": "@dwlib/internal-slot/*",
+    "#internal": {
+      "require": "./lib/internal/index.js",
+      "import": "./lib/internal/index.mjs"
+    }
+  },
+  "exports": {
+    ".": {
+      "require": "./lib/index.js",
+      "import": "./lib/index.mjs"
+    },
+    "./*": {
+      "require": "./lib/*.js",
+      "import": "./lib/*.mjs"
+    }
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dwlib-js/enum.git"
+  },
+  "keywords": [
+    "enum"
+  ],
+  "author": "Pavel Wolf",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/dwlib-js/enum/issues"
+  },
+  "homepage": "https://github.com/dwlib-js/enum#readme",
+  "dependencies": {
+    "@dwlib/internal-slot": "^1.0.0",
+    "@dwlib/intrinsic": "^1.0.0",
+    "@dwlib/type": "^1.0.0"
+  }
+}

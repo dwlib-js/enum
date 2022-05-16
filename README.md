@@ -12,6 +12,7 @@ The module for implementing an enumeration.
 const Enum = require('@dwlib/enum');
 const EnumContains = require('@dwlib/enum/EnumContains');
 const EnumEntries = require('@dwlib/enum/EnumEntries');
+const EnumForEach = require('@dwlib/enum/EnumForEach');
 const EnumGet = require('@dwlib/enum/EnumGet');
 const EnumHas = require('@dwlib/enum/EnumHas');
 const EnumIteratorNext = require('@dwlib/enum/EnumIteratorNext');
@@ -26,6 +27,7 @@ const IsEnumIterator = require('@dwlib/enum/IsEnumIterator');
 import Enum, {
   EnumContains,
   EnumEntries,
+  EnumForEach,
   EnumGet,
   EnumHas,
   EnumIteratorNext,
@@ -39,6 +41,7 @@ import Enum, {
 } from '@dwlib/enum';
 import EnumContains from '@dwlib/enum/EnumContains';
 import EnumEntries from '@dwlib/enum/EnumEntries';
+import EnumForEach from '@dwlib/enum/EnumForEach';
 import EnumGet from '@dwlib/enum/EnumGet';
 import EnumHas from '@dwlib/enum/EnumHas';
 import EnumIteratorNext from '@dwlib/enum/EnumIteratorNext';
@@ -58,6 +61,7 @@ import IsEnumIterator from '@dwlib/enum/IsEnumIterator';
   - *get* size
   - contains(value)
   - entries()
+  - forEach(callback[, thisArgument])
   - get(key)
   - has(key)
   - keyOf(value)
@@ -67,6 +71,7 @@ import IsEnumIterator from '@dwlib/enum/IsEnumIterator';
 ### Builtins
 - EnumContains(enumeration, value)
 - EnumEntries(enumeration)
+- EnumForEach(enumeration, callback[, thisArgument])
 - EnumGet(enumeration, key)
 - EnumHas(enumeration, key)
 - EnumIteratorNext(enumIterator)

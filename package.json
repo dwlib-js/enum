@@ -1,6 +1,6 @@
 {
   "name": "@dwlib/enum",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Enum API",
   "main": "lib/index.js",
   "imports": {
